@@ -3,7 +3,10 @@
 
 class Solution(object):
 
-    """Docstring for Solution. """
+    """
+    Given a string, return the length of the longest substring without
+    repeating characters.
+    """
 
     def __init__(self):
         """init """

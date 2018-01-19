@@ -3,7 +3,10 @@
 
 class Solution(object):
 
-    """Docstring for Solution. """
+    """
+    Given an array of integers, return indices of the two numbers such 
+    that they add up to a specific target.
+    """
 
     def __init__(self):
         """init """
@@ -12,9 +15,9 @@ class Solution(object):
     def twoSum(self, nums, target):
         """
 
-        :nums: TODO
-        :target: TODO
-        :returns: TODO
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
 
         """
         for i, v1 in enumerate(nums):
