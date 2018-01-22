@@ -9,6 +9,7 @@ In the head comment, the url of the problem could be found.
 * **solution/{problem name}/solution.py**: main solution python code
 * **solution/{problem name}/test.py**: test for the solution
 * **easy, medium, hard**: group the solutions in three level, symbolic links to real solution.
+* **template**: a set of template python solution init files, init basic python code
 
 # Problem list
 1. [1-TwoSum](https://leetcode.com/problems/two-sum/description/)
