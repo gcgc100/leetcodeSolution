@@ -14,6 +14,7 @@ In the head comment, the url of the problem could be found.
 1. [1-TwoSum](https://leetcode.com/problems/two-sum/description/)
 2. [2-AddTwoNumbers](https://leetcode.com/problems/add-two-numbers/description/)
 3. [3-LongestSubstringWithoutRepeatingCharacters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+5. [5-LongestPalindromicSubstring](https://leetcode.com/problems/longest-palindromic-substring/)
 
 # Dependency
 
