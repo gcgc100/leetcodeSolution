@@ -23,4 +23,5 @@ In the head comment, the url of the problem could be found.
 
 # TODO
 
-TODO: use nosetests as the test tool
+InitSolution: Add README problem list automatically. 
+InitSolution: Extract description from webpage to solution.py
