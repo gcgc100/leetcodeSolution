@@ -17,6 +17,7 @@ In the head comment, the url of the problem could be found.
 3. [3-LongestSubstringWithoutRepeatingCharacters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 5. [5-LongestPalindromicSubstring](https://leetcode.com/problems/longest-palindromic-substring/)
 6. [6-ZigZagConversion](https://leetcode.com/problems/zigzag-conversion/description/)
+7. [7-ReverseInteger](https://leetcode.com/problems/reverse-integer/description/)
 
 # Dependency
 
