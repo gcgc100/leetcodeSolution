@@ -18,6 +18,7 @@ In the head comment, the url of the problem could be found.
 5. [5-LongestPalindromicSubstring](https://leetcode.com/problems/longest-palindromic-substring/)
 6. [6-ZigZagConversion](https://leetcode.com/problems/zigzag-conversion/description/)
 7. [7-ReverseInteger](https://leetcode.com/problems/reverse-integer/description/)
+8. [8-string-tointeger-atoi](https://leetcode.com/problems/string-to-integer-atoi/description/)
 
 # Dependency
 
