@@ -19,6 +19,7 @@ In the head comment, the url of the problem could be found.
 6. [6-ZigZagConversion](https://leetcode.com/problems/zigzag-conversion/description/)
 7. [7-ReverseInteger](https://leetcode.com/problems/reverse-integer/description/)
 8. [8-string-tointeger-atoi](https://leetcode.com/problems/string-to-integer-atoi/description/)
+9. [9-palindrome-number](https://leetcode.com/problems/palindrome-number/description/)
 
 # Dependency
 
