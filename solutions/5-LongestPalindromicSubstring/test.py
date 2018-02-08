@@ -27,4 +27,7 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(outputStr, "bbb")
         inputStr = "cba"
         outputStr = Solution().longestPalindrome(inputStr)
-        self.assertEqual(outputStr, "")
+        self.assertEqual(outputStr, "c")
+        inputStr = "a"
+        outputStr = Solution().longestPalindrome(inputStr)
+        self.assertEqual(outputStr, "a")

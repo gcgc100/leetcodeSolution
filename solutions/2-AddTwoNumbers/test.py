@@ -34,3 +34,32 @@ class TestSolution(unittest.TestCase):
             print output.val
             i = i + 1
             output = output.next
+
+        l1 = ListNode(1)
+        l1.next = ListNode(8)
+
+        l2 = ListNode(0)
+
+        output = Solution().addTwoNumbers(l1, l2)
+
+        outputNumbers = [1, 8]
+        i = 0
+        while output is not None:
+            self.assertEqual(output.val, outputNumbers[i])
+            print output.val
+            i = i + 1
+            output = output.next
+
+        l1 = ListNode(5)
+
+        l2 = ListNode(5)
+
+        output = Solution().addTwoNumbers(l1, l2)
+
+        outputNumbers = [0, 1]
+        i = 0
+        while output is not None:
+            self.assertEqual(output.val, outputNumbers[i])
+            print output.val
+            i = i + 1
+            output = output.next

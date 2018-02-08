@@ -20,15 +20,13 @@ class Solution(object):
 
         """
         longestLen = 0
-        for i, v1 in enumerate(s):
-            subStrList = [v1]
-            curLen = 1
-            for v2 in s[i+1:]:
-                if v2 in subStrList:
-                    if longestLen < curLen:
-                        longestLen = curLen
+        for start in range(len(s)+1):
+            for end in range(start+1, len(s)+1):
+                length = end - start
+                if length < longestLen:
+                    continue
+                if len(set(list(s[start:end]))) < length:
                     break
                 else:
-                    subStrList.append(v2)
-                    curLen += 1
+                    longestLen = length
         return longestLen

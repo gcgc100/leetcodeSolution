@@ -27,9 +27,13 @@ class Solution(object):
         retHead = ret
         addOn = 0
         while l1 is not None:
-            assert l2 is not None
-            output = (l1.val + l2.val + addOn) % 10
-            addOn = (l1.val + l2.val + addOn) / 10
+            v1 = l1.val
+            if l2 is None:
+                v2 = 0
+            else:
+                v2 = l2.val
+            output = (v1 + v2 + addOn) % 10
+            addOn = (v1 + v2 + addOn) / 10
             
             if retHead is None:
                 retHead = ListNode(output)
@@ -38,5 +42,17 @@ class Solution(object):
                 ret.next = ListNode(output)
                 ret = ret.next
             l1 = l1.next
+            if l2 is not None:
+                l2 = l2.next
+        while l2 is not None:
+            v1 = 0
+            v2 = l2.val
+            output = (v1 + v2 + addOn) % 10
+            addOn = (v1 + v2 + addOn) / 10
+            
+            ret.next = ListNode(output)
+            ret = ret.next
             l2 = l2.next
+        if addOn == 1:
+            ret.next = ListNode(1)
         return retHead

@@ -19,3 +19,4 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(Solution().lengthOfLongestSubstring("abcabcbb"), 3)
         self.assertEqual(Solution().lengthOfLongestSubstring("bbbbb"), 1)
         self.assertEqual(Solution().lengthOfLongestSubstring("pwwkew"), 3)
+        self.assertEqual(Solution().lengthOfLongestSubstring("c"), 1)
