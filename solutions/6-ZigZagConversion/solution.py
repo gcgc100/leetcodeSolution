@@ -17,6 +17,46 @@ class Solution(object):
     convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
     """
 
+    # def convert(self, s, numRows):
+    #     """
+
+    #     :type s: str
+    #     :type numRows: int
+    #     :rtype: str
+
+    #     """
+    #     if numRows == 0:
+    #         return
+    #     flag = numRows - 1
+    #     i = 0
+    #     lineArray = []
+    #     while i < len(s):
+    #         if flag == numRows -1 or flag == 0:
+    #             lineArray.append([x for x in s[i:i+numRows]])
+    #             i = i + numRows
+    #             flag = max(numRows - 2, 0)
+    #         elif flag < numRows -1 and flag > 0:
+    #             tempLine = [None for x in range(numRows)]
+    #             tempLine[flag] = s[i]
+    #             lineArray.append(tempLine)
+    #             i = i+1
+    #             flag = flag -1
+    #     if len(lineArray) > 0:
+    #         while len(lineArray[-1]) < numRows:
+    #             lineArray[-1].append(None)
+    #     else:
+    #         return ""
+    #     __import__("nose").tools.set_trace()
+
+    #     lineArrayNew = [[row[col] for row in lineArray] for col in range(len(lineArray[0]))]
+    #     for l in lineArrayNew:
+    #         while True:
+    #             try:
+    #                 l.remove(None)
+    #             except ValueError:
+    #                 break
+    #     return "".join(["".join(w) for w in lineArrayNew])
+
     def convert(self, s, numRows):
         """
 
@@ -25,27 +65,21 @@ class Solution(object):
         :rtype: str
 
         """
-        lineArray = [[] for i in range(numRows)]
-        lineNum = -1
-        colNum = 0
-        for character in s:
-            if colNum % 2 == 1:
-                # odde column, step 2
-                lineNum += 2
-                lineArray[lineNum % numRows].append(character)
-                if lineNum % numRows == 0 or lineNum % numRows == numRows-1:
-                    # next column
-                    colNum += 1
+        i = 0
+        retStr = ""
+        while i < numRows:
+            if i == 0 or i == numRows -1:
+                index = i
+                while index < len(s):
+                    retStr += s[index]
+                    index += max(2*numRows-2, 1)
             else:
-                # even column, step 1
-                lineNum += 1
-                lineArray[lineNum % numRows].append(character)
-                if lineNum % numRows == numRows-1:
-                    # next column
-                    colNum += 1
-            if lineNum % numRows == 0 or lineNum % numRows == numRows-1:
-                # next column
-                colNum += 1
-        lineStrArray = ["".join(s) for s in lineArray]
-        print lineStrArray
-        return "".join(lineStrArray)
+                index = i
+                while index < len(s):
+                    retStr += s[index]
+                    mid = index + 2*numRows -2*i - 2
+                    if mid < len(s):
+                        retStr += s[mid]
+                    index += 2*numRows-2
+            i += 1
+        return retStr
