@@ -26,6 +26,11 @@ In the head comment, the url of the problem could be found.
 14. [14-longest-common-prefix](https://leetcode.com/problems/longest-common-prefix/description/)
 20. [20-valid-parentheses](https://leetcode.com/problems/valid-parentheses/description/)
 21. [21-merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+26. [26-remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
+27. [27-remove-element](https://leetcode.com/problems/remove-element/description/)
+28. [28-implement-strstr](https://leetcode.com/problems/implement-strstr/description/)
+35. [35-search-insert-position](https://leetcode.com/problems/search-insert-position/description/)
+38. [38-count-and-say](https://leetcode.com/problems/count-and-say/description/)
 TO BE DONE
 
 # Dependency
