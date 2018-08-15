@@ -31,6 +31,10 @@ In the head comment, the url of the problem could be found.
 28. [28-implement-strstr](https://leetcode.com/problems/implement-strstr/description/)
 35. [35-search-insert-position](https://leetcode.com/problems/search-insert-position/description/)
 38. [38-count-and-say](https://leetcode.com/problems/count-and-say/description/)
+53. [53-maximum-subarray](https://leetcode.com/problems/maximum-subarray/description/)
+58. [58-length-of-last-word](https://leetcode.com/problems/length-of-last-word/description/)
+66. [66-plus-one](https://leetcode.com/problems/plus-one/description/)
+67. [67-add-binary](https://leetcode.com/problems/add-binary/description/)
 TO BE DONE
 
 # Dependency

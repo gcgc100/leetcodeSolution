@@ -5,8 +5,9 @@ error_exit() {
     exit 1
 }
 
-if [ $1 == "-h" ]; then
+if [[ $# == 0 || $1 == "-h" ]]; then
     echo "bash initSolution.sh {seq} {url} {difficulty}"
+    exit
 fi
 
 if [ $# == 3 ]; then
